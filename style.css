@@ -1,0 +1,88 @@
+@keyframes enter_the_game{
+    0%{
+        padding: 50vh;
+        font-size: 10rem;
+        color: red;
+    }
+    50%{
+        font-size: 10rem;
+        color: red;
+        padding: 17vh;
+    }
+    100%{
+        padding: 0px;
+    }
+} 
+@keyframes enter{
+    0%{
+        opacity: 0%;
+    }
+    80%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+h1{
+    margin: 10px;
+    font-size: 2.5rem;
+    animation: enter 4s;
+}
+h2{
+    margin: 0;
+    font-size: 2rem;
+    animation: enter_the_game 4s;
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+#new_colors{
+    cursor: pointer;
+    padding:0px 10px;
+}
+.navbar-item{
+    color: steelblue;
+}
+.navbar-difficulty-item{
+    display: inline;
+    box-sizing: border-box;
+    padding:0px 20px;
+}
+.navbar-difficulty-item:hover,.level,#new_colors:hover{
+    color: white;
+    background-color: darkblue;
+    cursor: pointer;
+}
+.game-screen{
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+.color-pick{
+    background-color: pink;
+    box-sizing: border-box;
+    margin: 4%;
+    transition: 0.3s opacity;
+    border-radius: 10px;
+}
